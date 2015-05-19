@@ -1,6 +1,6 @@
 {
   "name": "bleterm",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "BLE terminal program for Nordic Semiconductor UART devices",
   "main": "bleterm.js",
   "scripts": {
