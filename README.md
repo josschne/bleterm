@@ -21,11 +21,13 @@ The switch on the BLE UART should be in the UART position, not CMD.
 
 [Breadboard](images/bletermHW.png)
 
-The Arduino sketch, cli.ino, the arduino/ subdirectory must be uploaded to to
-eh Pro Trinket. This is a demo of a small command line interface over the
-hardware serial interface. The only available command implemented in cli.ino is
-"blink [0|1|t|f]" which turns the LED connected to digital pin 13 on and off.
-
+The Arduino sketch, arduino/cli.ino, must be uploaded to the Pro Trinket. This
+is a demo of a small command line interface over the hardware serial interface.
+The only command implemented in cli.ino is "blink [0|1|t|f]" which turns the
+LED connected to digital pin 13 on and off. This can be used as a template
+for implementing commands for complex devices. For example, if Neopixels are
+connected to the Pro Trinket, implement commands to switch between effects
+such as rainbow, colorWipe, and theaterChase.
 
 ## How to use
 
@@ -40,7 +42,7 @@ a BLE UART device, then start typing. Press Ctrl-D to exit.
 The following is a sample session showing how to turn the Pro Trinket LED on
 and off.
 
-```sh
+```
 pi@raspi ~/bleterm $ node bleterm.js 
 Connected to Adafruit Bluefruit LE
 blink 1
@@ -50,14 +52,14 @@ pi@raspi ~/bleterm $
 ```
 
 The following is a sample session showing how to get into AT command mode.
-Note: You will not see +++ and ATI because the BLE UART does not echo back the
-characters as you type them. They are shown below for clarity.
+Note: You will not see +++ and ATI as you type because the BLE UART does not
+echo back the characters. They are shown below for clarity.
 
 When the BLE UART is in AT command mode, the cli.ino sketch does not receive
 the characters you type. The BLE UART intercepts the incoming characters. Be
 sure to send +++ a second time to make the BLE UART revert to UART data mode.
 
-```sh
+```
 pi@raspi ~/bleterm $ node bleterm.js 
 Connected to Adafruit Bluefruit LE
 +++
