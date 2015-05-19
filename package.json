@@ -8,9 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bbx10/node-bleterm.git"
+    "url": "https://github.com/bbx10/bleterm.git"
   },
   "keywords": [
+    "noble",
+    "nrfuart",
     "bluetooth",
     "low",
     "energy",
@@ -18,6 +20,10 @@
     "ble"
   ],
   "author": "bbx10node <bbx10node@gmail.com> (http://x10linux.blogspot.com/)",
+  "bugs": {
+    "url": "https://github.com/bbx10/bleterm/issues"
+  },
+  "homepage": "https://github.com/bbx10/bleterm.git",
   "license": "MIT",
   "dependencies": {
     "nrfuart": "0.0.4"
