@@ -1,0 +1,26 @@
+{
+  "name": "bleterm",
+  "version": "0.1.0",
+  "description": "BLE terminal program for Nordic Semiconductor UART devices",
+  "main": "bleterm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbx10/node-bleterm.git"
+  },
+  "keywords": [
+    "bluetooth",
+    "low",
+    "energy",
+    "btle",
+    "ble"
+  ],
+  "author": "bbx10node <bbx10node@gmail.com> (http://x10linux.blogspot.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "nrfuart": "0.0.4"
+  },
+  "devDependencies": {}
+}
